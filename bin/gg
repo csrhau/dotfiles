@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Fast Find
+# Recursively search through a directory for a file
+
+if [[ $# -ne 1 ]];
+then
+	echo "Usage: $0 [single search term]"
+	exit -1
+fi
+
+echo "find `pwd` -iname "*$1*" 2>/dev/null | egrep -si --color=auto -- $1"
+find `pwd` 2>/dev/null | egrep -si --color=auto -- $1

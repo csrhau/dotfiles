@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Fast Find
+# Recursively search through a directory for a term
+
+if [[ $# -ne 1 ]];
+then
+	echo "Usage: $0 [single search term]"
+	exit -1
+fi
+
+echo "egrep -sirI --color=auto -- \"$1\" ."
+egrep -sirI --color=auto -- "$1" .

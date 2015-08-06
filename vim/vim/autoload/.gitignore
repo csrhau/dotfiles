@@ -1,0 +1,2 @@
+# Let vim-plug load itself.
+plug.vim  

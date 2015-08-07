@@ -4,9 +4,6 @@ call plug#begin('~/.vim/plugged')
 " Add plugins to &runtimepath
 call plug#end()
 
-
-
-set colorcolumn=80
 highlight ColorColumn ctermbg=red
 
 syntax on
@@ -24,9 +21,3 @@ set ttymouse=xterm2
 set smartindent
 set autoindent
 filetype indent on
-
-
-" Load vim-plug
-if empty(glob("~/.vim/autoload/plug.vim"))
-      execute '!curl -fLo ~/.vim/autoload/plug.vim https://raw.github.com/junegunn/vim-plug/master/plug.vim'
-endif

@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
 " Add plugins to &runtimepath
 call plug#end()
 
+set colorcolumn=80
 highlight ColorColumn ctermbg=red
 
 syntax on

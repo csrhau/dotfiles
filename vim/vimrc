@@ -22,3 +22,5 @@ set ttymouse=xterm2
 set smartindent
 set autoindent
 filetype indent on
+
+let mapleader = ","

@@ -1,6 +1,6 @@
 DOTFILE_DIR:=$(strip $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST)))))
 
-all: gitcfg symlinks
+all: symlinks gitcfg 
 
 .PHONY: symlinks
 symlinks:
@@ -15,4 +15,3 @@ gitcfg:
 	@git config --global user.name "Stephen Roberts"
 	@git config --global user.email "stephenianroberts@gmail.com"
 	@git config --global color.ui auto
-

@@ -1,1 +1,1 @@
-map <leader>t GoTest<CR>
+map <leader>t :GoTest<CR>

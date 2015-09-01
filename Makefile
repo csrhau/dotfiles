@@ -14,4 +14,5 @@ gitcfg:
 	@echo Configuring git
 	@git config --global user.name "Stephen Roberts"
 	@git config --global user.email "stephenianroberts@gmail.com"
+	@git config --global core.editor "vim"
 	@git config --global color.ui auto

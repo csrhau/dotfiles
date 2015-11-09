@@ -24,3 +24,5 @@ set autoindent
 filetype indent on
 
 let mapleader = ","
+
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o

@@ -7,7 +7,10 @@ symlinks:
 	@echo Linking dotfiles
 	@ln -snf  $(DOTFILE_DIR)/vim/vimrc ~/.vimrc
 	@ln -snf  $(DOTFILE_DIR)/vim/vim ~/.vim
+	@ln -snf  $(DOTFILE_DIR)/tmux/tmux.conf ~/.tmux.conf
+	@ln -snf  $(DOTFILE_DIR)/tmux/tmux-osx.conf ~/.tmux-osx.conf
 	@ln -snf  $(DOTFILE_DIR)/bin ~/bin
+
 
 .PHONY: gitcfg
 gitcfg:

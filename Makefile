@@ -20,3 +20,4 @@ gitcfg:
 	@git config --global core.editor "vim"
 	@git config --global color.ui auto
 	@git config --global push.default simple
+	@git config --global credential.https://github.com.username csrhau
